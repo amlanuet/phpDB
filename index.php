@@ -13,7 +13,6 @@ $products_item = '<ul class="products">';
 while($obj = $results->fetch_object())
 {
 $products_item .= <<<EOT
-    <link rel="stylesheet" href="style.css">
 	<li class="product">
 	<form method="post" action="cart_update.php">
 	<div class="product-content"><h3>{$obj->product_name}</h3>
